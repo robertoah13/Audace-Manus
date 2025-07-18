@@ -987,7 +987,8 @@ window.addEventListener('error', function(e) {
 function enhanceAccessibility() {
     // Add skip link
     const skipLink = document.createElement('a');
-    skipLink.href = '#main';
+    // Link directly para a seção de home já existente
+    skipLink.href = '#home';
     skipLink.textContent = 'Pular para o conteúdo principal';
     skipLink.className = 'skip-link';
     skipLink.style.cssText = `
@@ -1016,7 +1017,7 @@ function enhanceAccessibility() {
     // Add main landmark
     const heroSection = document.querySelector('.hero');
     if (heroSection) {
-        heroSection.setAttribute('id', 'main');
+        // Apenas define o papel principal sem alterar o ID existente
         heroSection.setAttribute('role', 'main');
     }
     
