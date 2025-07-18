@@ -204,6 +204,11 @@ a {
     box-shadow: var(--shadow-medium);
 }
 
+/* ===== STATIC PAGE LAYOUT ===== */
+.static-page {
+    padding-top: 6rem; /* offset for fixed header */
+}
+
 .navbar {
     padding: 1rem 0;
 }
