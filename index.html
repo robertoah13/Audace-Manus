@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Audace - Agência de Marketing Digital Elite. Transforme sua marca com estratégias premium de branding, redes sociais, SEO/SEM e análise de dados.">
+    <meta name="keywords" content="marketing digital, branding, SEO, redes sociais, análise de dados, agência premium">
+    <meta name="author" content="Audace">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Audace - Marketing Digital Elite">
+    <meta property="og:description" content="Transforme sua marca com estratégias premium de marketing digital">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://audace.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Audace - Marketing Digital Elite">
+    <meta name="twitter:description" content="Transforme sua marca com estratégias premium de marketing digital">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop">
+    
+    <title>Audace - Marketing Digital Elite</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Audace",
+        "description": "Agência de Marketing Digital Elite",
+        "url": "https://audace.com",
+        "logo": "https://audace.com/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-11-99999-9999",
+            "contactType": "customer service"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Paulista, 1000",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "postalCode": "01310-100",
+            "addressCountry": "BR"
+        },
+        "sameAs": [
+            "https://linkedin.com/company/audace",
+            "https://instagram.com/audace"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">
+                        <span class="logo-text">Audace</span>
+                        <span class="logo-accent">.</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#servicos" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="navToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background" style="background-image: url('hero-background.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">
+                    <span class="hero-title-main">Transforme Sua Marca</span>
+                    <span class="hero-title-sub">com Estratégias Elite</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Somos especialistas em marketing digital premium, criando experiências únicas que conectam marcas aos seus públicos de forma autêntica e impactante.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contato" class="btn btn-primary btn-glow">
+                        <span>Entre em Contato</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#sobre" class="btn btn-secondary">
+                        <span>Conheça Nossa História</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Role para descobrir</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="team-photo.jpg" alt="Equipe Audace" loading="lazy">
+                    <div class="about-image-overlay"></div>
+                </div>
+                
+                <div class="about-text">
+                    <div class="section-header">
+                        <span class="section-subtitle">Sobre Nós</span>
+                        <h2 class="section-title">Uma Agência Premiada com Visão de Futuro</h2>
+                    </div>
+                    
+                    <p class="about-description">
+                        Somos uma agência de marketing digital premiada com mais de 10 anos de experiência no mercado. Nossa missão é transformar marcas através de estratégias inovadoras e criativas que geram resultados excepcionais.
+                    </p>
+                    
+                    <p class="about-description">
+                        Combinamos expertise técnica com criatividade para entregar soluções personalizadas que elevam nossos clientes a um novo patamar de sucesso digital.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">Clientes Satisfeitos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="1200">0</div>
+                            <div class="stat-label">Projetos Entregues</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Prêmios Conquistados</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="98">0</div>
+                            <div class="stat-label">% de Satisfação</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle">Nossos Serviços</span>
+                <h2 class="section-title">Soluções Completas em Marketing Digital</h2>
+                <p class="section-description">
+                    Oferecemos um portfólio completo de serviços para elevar sua marca ao próximo nível
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="branding">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">Branding & Identidade</h3>
+                    <p class="service-description">
+                        Criamos identidades visuais marcantes e estratégias de marca que conectam emocionalmente com seu público.
+                    </p>
+                    <a href="#" class="service-link">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-service="social">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="service-title">Redes Sociais</h3>
+                    <p class="service-description">
+                        Gestão completa de redes sociais com conteúdo estratégico e campanhas que geram engajamento real.
+                    </p>
+                    <a href="#" class="service-link">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-service="seo">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="service-title">SEO & SEM</h3>
+                    <p class="service-description">
+                        Otimização para mecanismos de busca e campanhas pagas que maximizam sua visibilidade online.
+                    </p>
+                    <a href="#" class="service-link">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-service="content">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3 class="service-title">Produção de Conteúdo</h3>
+                    <p class="service-description">
+                        Conteúdo estratégico e envolvente que educa, inspira e converte seu público em clientes fiéis.
+                    </p>
+                    <a href="#" class="service-link">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-service="analytics">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Análise de Dados</h3>
+                    <p class="service-description">
+                        Insights profundos através de análise de dados para otimizar continuamente suas estratégias.
+                    </p>
+                    <a href="#" class="service-link">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-service="strategy">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="service-title">Estratégia Digital</h3>
+                    <p class="service-description">
+                        Planejamento estratégico completo para posicionar sua marca de forma única no mercado digital.
+                    </p>
+                    <a href="#" class="service-link">
+                        <span>Saiba mais</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle">Nosso Portfólio</span>
+                <h2 class="section-title">Cases de Sucesso</h2>
+                <p class="section-description">
+                    Conheça alguns dos projetos que transformaram negócios e geraram resultados extraordinários
+                </p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="campaign">Campanhas</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=300&fit=crop" alt="Projeto Branding Luxo" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Rebranding Luxo Premium</h3>
+                                <p class="portfolio-category">Branding</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="1">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="social">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop" alt="Campanha Social Media" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Campanha Viral #TechFuture</h3>
+                                <p class="portfolio-category">Social Media</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="2">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop" alt="E-commerce Premium" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">E-commerce Premium</h3>
+                                <p class="portfolio-category">Web Design</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="3">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="campaign">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Campanha Digital 360" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Campanha Digital 360°</h3>
+                                <p class="portfolio-category">Campanhas</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="4">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop" alt="Startup Tech Branding" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Startup Tech Branding</h3>
+                                <p class="portfolio-category">Branding</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="5">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="social">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop" alt="Influencer Campaign" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Influencer Campaign</h3>
+                                <p class="portfolio-category">Social Media</p>
+                                <div class="portfolio-actions">
+                                    <button class="portfolio-btn" data-project="6">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <button class="portfolio-btn">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle">Blog</span>
+                <h2 class="section-title">Insights e Tendências</h2>
+                <p class="section-description">
+                    Fique por dentro das últimas novidades e estratégias do marketing digital
+                </p>
+            </div>
+            
+            <div class="blog-search">
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar artigos..." class="search-input" id="blogSearch">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=250&fit=crop" alt="Tendências Marketing 2024" loading="lazy">
+                        <div class="blog-category">Tendências</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">15 de Janeiro, 2024</span>
+                            <span class="blog-read-time">5 min de leitura</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="#">As 10 Principais Tendências de Marketing Digital para 2024</a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            Descubra as tendências que vão dominar o marketing digital este ano e como sua empresa pode se preparar para o futuro.
+                        </p>
+                        <a href="#" class="blog-link">
+                            <span>Ler mais</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=400&h=250&fit=crop" alt="ROI Marketing Digital" loading="lazy">
+                        <div class="blog-category">Estratégia</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">10 de Janeiro, 2024</span>
+                            <span class="blog-read-time">7 min de leitura</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="#">Como Medir o ROI Real do Seu Marketing Digital</a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            Aprenda as métricas essenciais e ferramentas para calcular o retorno sobre investimento das suas campanhas digitais.
+                        </p>
+                        <a href="#" class="blog-link">
+                            <span>Ler mais</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop" alt="Social Media 2024" loading="lazy">
+                        <div class="blog-category">Social Media</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">5 de Janeiro, 2024</span>
+                            <span class="blog-read-time">6 min de leitura</span>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="#">O Futuro das Redes Sociais: Novos Formatos e Oportunidades</a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            Explore os novos formatos de conteúdo e plataformas emergentes que estão revolucionando o marketing nas redes sociais.
+                        </p>
+                        <a href="#" class="blog-link">
+                            <span>Ler mais</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-newsletter">
+                <div class="newsletter-content">
+                    <h3 class="newsletter-title">Receba Insights Exclusivos</h3>
+                    <p class="newsletter-description">
+                        Assine nossa newsletter e receba as últimas tendências e estratégias de marketing digital diretamente no seu e-mail.
+                    </p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Seu melhor e-mail" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">
+                            <span>Assinar</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-subtitle">Contato</span>
+                <h2 class="section-title">Vamos Conversar?</h2>
+                <p class="section-description">
+                    Estamos prontos para transformar sua marca. Entre em contato e descubra como podemos ajudar.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Endereço</h4>
+                            <p>Av. Paulista, 1000<br>São Paulo, SP - 01310-100</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefone</h4>
+                            <p>+55 (11) 99999-9999</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-mail</h4>
+                            <p>contato@audace.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Siga-nos</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Seu nome" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Seu e-mail" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Seu telefone" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select name="service" class="form-input" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="branding">Branding & Identidade</option>
+                                <option value="social">Redes Sociais</option>
+                                <option value="seo">SEO & SEM</option>
+                                <option value="content">Produção de Conteúdo</option>
+                                <option value="analytics">Análise de Dados</option>
+                                <option value="strategy">Estratégia Digital</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Conte-nos sobre seu projeto" class="form-input form-textarea" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">
+                            <span>Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="contact-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0963447615!2d-46.65844368502207!3d-23.561684284682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt!2sbr!4v1635959234567!5m2!1spt!2sbr" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Audace</span>
+                        <span class="logo-accent">.</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando marcas através de estratégias inovadoras de marketing digital.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicos">Branding & Identidade</a></li>
+                        <li><a href="#servicos">Redes Sociais</a></li>
+                        <li><a href="#servicos">SEO & SEM</a></li>
+                        <li><a href="#servicos">Produção de Conteúdo</a></li>
+                        <li><a href="#servicos">Análise de Dados</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">LGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Audace. Todos os direitos reservados.
+                </p>
+                <div class="footer-back-to-top">
+                    <button class="back-to-top" id="backToTop">
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget Placeholder -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-toggle" id="chatToggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h4>Como podemos ajudar?</h4>
+                <button class="chat-close" id="chatClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-body">
+                <p>Olá! Estamos aqui para ajudar. Como podemos auxiliá-lo hoje?</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">Título do Projeto</h3>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Google Analytics Placeholder -->
+    <script>
+        // Google Analytics placeholder
+        // Replace with your actual GA tracking code
+        console.log('Google Analytics placeholder - Replace with actual tracking code');
+    </script>
+</body>
+</html>
+
