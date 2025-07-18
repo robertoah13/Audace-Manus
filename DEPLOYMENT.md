@@ -8,13 +8,13 @@ Antes do deploy, execute as seguintes otimizações:
 
 ```bash
 # Minificar CSS
-npx clean-css-cli -o style.min.css style.css
+npx clean-css-cli -o css/style.min.css css/style.css
 
 # Minificar JavaScript
-npx terser script.js -o script.min.js
+npx terser js/script.js -o js/script.min.js
 
 # Otimizar imagens
-npx imagemin *.jpg *.png --out-dir=optimized/
+npx imagemin images/*.jpg images/*.png --out-dir=optimized/
 ```
 
 ### 2. Configuração de Headers
