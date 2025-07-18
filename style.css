@@ -263,6 +263,14 @@ a {
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.nav-toggle:focus {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 2px;
 }
 
 .bar {
