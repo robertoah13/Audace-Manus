@@ -19,15 +19,18 @@ Este projeto consiste no desenvolvimento de um website completo, sofisticado e r
 ```
 agenciamarketingelite/
 ├── index.html              # Página principal
-├── style.css               # Estilos CSS
-├── script.js               # JavaScript funcional
+├── css/
+│   └── style.css           # Estilos CSS
+├── js/
+│   └── script.js           # JavaScript funcional
+├── images/
+│   ├── team-photo.jpg          # Foto da equipe
+│   ├── hero-background.jpg     # Imagem de fundo do hero
+│   ├── office-workspace.jpg    # Imagem do escritório
+│   ├── social-media.jpg        # Imagem de redes sociais
+│   ├── analytics-dashboard.png # Dashboard de analytics
+│   └── content-creation.png    # Imagem de criação de conteúdo
 ├── README.md               # Documentação
-├── team-photo.jpg          # Foto da equipe
-├── hero-background.jpg     # Imagem de fundo do hero
-├── office-workspace.jpg    # Imagem do escritório
-├── social-media.jpg        # Imagem de redes sociais
-├── analytics-dashboard.png # Dashboard de analytics
-├── content-creation.png    # Imagem de criação de conteúdo
 └── server.log             # Log do servidor local
 ```
 
@@ -207,7 +210,7 @@ Sistema completo de temas:
 <meta property="og:title" content="Audace - Marketing Digital Elite">
 <meta property="og:description" content="Transforme sua marca com estratégias premium">
 <meta property="og:type" content="website">
-<meta property="og:image" content="hero-background.jpg">
+<meta property="og:image" content="images/hero-background.jpg">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
