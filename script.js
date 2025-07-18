@@ -20,6 +20,7 @@ function initializeWebsite() {
     initializeParticles();
     initializeCounters();
     initializeLazyLoading();
+    updateFooterYear();
     
     // Add event listeners
     addEventListeners();
@@ -85,7 +86,9 @@ function initializeNavigation() {
     navToggle.addEventListener('click', function() {
         navToggle.classList.toggle('active');
         navMenu.classList.toggle('active');
-        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+        const expanded = navMenu.classList.contains('active');
+        document.body.style.overflow = expanded ? 'hidden' : '';
+        navToggle.setAttribute('aria-expanded', expanded);
     });
     
     // Close mobile menu when clicking on links
@@ -946,6 +949,14 @@ function preloadResources() {
 
 // Initialize preloading
 preloadResources();
+
+// Update footer year dynamically
+function updateFooterYear() {
+    const yearSpan = document.getElementById('footerYear');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+}
 
 // ===== ANALYTICS PLACEHOLDER =====
 function trackEvent(category, action, label) {
