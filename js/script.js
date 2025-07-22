@@ -68,6 +68,12 @@ function initializeNavigation() {
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
     const backToTop = document.getElementById('backToTop');
+
+    // If the page doesn't have a hero section, keep the header styled
+    // as "scrolled" so the links appear over light backgrounds
+    if (!document.querySelector('.hero')) {
+        header.classList.add('scrolled');
+    }
     
     // Header scroll effect
     window.addEventListener('scroll', function() {
