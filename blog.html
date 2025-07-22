@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Audace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html#home">
+                        <span class="logo-text">Audace</span>
+                        <span class="logo-accent">.</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="index.html#servicos" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="index.html#portfolio" class="nav-link">Portfólio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="index.html#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" type="button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="static-page">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="section-title">Blog</h1>
+                <p class="section-description">Insights e estratégias para potencializar sua presença digital.</p>
+            </div>
+        </section>
+        <section class="page-content">
+            <div class="container">
+                <div class="blog-search">
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar artigos..." class="search-input" id="blogSearch">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=250&fit=crop" alt="Tendências Marketing 2024" loading="lazy">
+                            <div class="blog-category">Tendências</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">15 de Janeiro, 2024</span>
+                                <span class="blog-read-time">5 min de leitura</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="tendencias-marketing-2024.html">As 10 Principais Tendências de Marketing Digital para 2024</a>
+                            </h3>
+                            <p class="blog-excerpt">
+                                Descubra as tendências que vão dominar o marketing digital este ano e como sua empresa pode se preparar para o futuro.
+                            </p>
+                            <a href="tendencias-marketing-2024.html" class="blog-link">
+                                <span>Ler mais</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=400&h=250&fit=crop" alt="ROI Marketing Digital" loading="lazy">
+                            <div class="blog-category">Estratégia</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">10 de Janeiro, 2024</span>
+                                <span class="blog-read-time">7 min de leitura</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="roi-marketing-digital.html">Como Medir o ROI Real do Seu Marketing Digital</a>
+                            </h3>
+                            <p class="blog-excerpt">
+                                Aprenda as métricas essenciais e ferramentas para calcular o retorno sobre investimento das suas campanhas digitais.
+                            </p>
+                            <a href="roi-marketing-digital.html" class="blog-link">
+                                <span>Ler mais</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop" alt="Social Media 2024" loading="lazy">
+                            <div class="blog-category">Social Media</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">5 de Janeiro, 2024</span>
+                                <span class="blog-read-time">6 min de leitura</span>
+                            </div>
+                            <h3 class="blog-title">
+                                <a href="futuro-redes-sociais.html">O Futuro das Redes Sociais: Novos Formatos e Oportunidades</a>
+                            </h3>
+                            <p class="blog-excerpt">
+                                Explore os novos formatos de conteúdo e plataformas emergentes que estão revolucionando o marketing nas redes sociais.
+                            </p>
+                            <a href="futuro-redes-sociais.html" class="blog-link">
+                                <span>Ler mais</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="blog-newsletter">
+                    <div class="newsletter-content">
+                        <h3 class="newsletter-title">Receba Insights Exclusivos</h3>
+                        <p class="newsletter-description">
+                            Assine nossa newsletter e receba as últimas tendências e estratégias de marketing digital diretamente no seu e-mail.
+                        </p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Seu melhor e-mail" class="newsletter-input" required>
+                            <button type="submit" class="newsletter-btn">
+                                <span>Assinar</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Audace</span>
+                        <span class="logo-accent">.</span>
+                    </div>
+                    <p class="footer-description">Transformando marcas através de estratégias inovadoras de marketing digital.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="branding-identidade.html">Branding & Identidade</a></li>
+                        <li><a href="redes-sociais.html">Redes Sociais</a></li>
+                        <li><a href="seo-sem.html">SEO & SEM</a></li>
+                        <li><a href="producao-conteudo.html">Produção de Conteúdo</a></li>
+                        <li><a href="analise-dados.html">Análise de Dados</a></li>
+                        <li><a href="estrategia-digital.html">Estratégia Digital</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#sobre">Sobre Nós</a></li>
+                        <li><a href="index.html#portfolio">Portfólio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                        <li><a href="carreiras.html">Carreiras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacidade.html">Política de Privacidade</a></li>
+                        <li><a href="termos.html">Termos de Uso</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                        <li><a href="lgpd.html">LGPD</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© <span id="footerYear">2024</span> Audace. Todos os direitos reservados.</p>
+                <div class="footer-back-to-top"><button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button></div>
+            </div>
+        </div>
+    </footer>
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-toggle" id="chatToggle"><i class="fas fa-comments"></i></div>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h4>Como podemos ajudar?</h4>
+                <button class="chat-close" id="chatClose"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-body">
+                <p>Olá! Estamos aqui para ajudar. Como podemos auxiliá-lo hoje?</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
