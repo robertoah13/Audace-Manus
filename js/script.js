@@ -69,9 +69,13 @@ function initializeNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
     const backToTop = document.getElementById('backToTop');
 
-    // If the page doesn't have a hero section, keep the header styled
-    // as "scrolled" so the links appear over light backgrounds
-    if (!document.querySelector('.hero')) {
+    // Check if the current page contains a hero section. Many of the
+    // stand­alone pages don't have one and, in those cases, the header should
+    // keep its dark style at all times so that the navigation links remain
+    // visible against the light background.
+    const hasHero = !!document.querySelector('.hero');
+
+    if (!hasHero) {
         header.classList.add('scrolled');
     }
     
@@ -81,8 +85,14 @@ function initializeNavigation() {
             header.classList.add('scrolled');
             backToTop.style.opacity = '1';
             backToTop.style.visibility = 'visible';
-        } else {
+        } else if (hasHero) {
+            // Only remove the "scrolled" class when a hero is present.
+            // For pages without a hero section we keep the dark header
+            // regardless of scroll position.
             header.classList.remove('scrolled');
+            backToTop.style.opacity = '0';
+            backToTop.style.visibility = 'hidden';
+        } else {
             backToTop.style.opacity = '0';
             backToTop.style.visibility = 'hidden';
         }
